@@ -6,7 +6,7 @@ import java.util.Date;
 public class TCPProxy {
 
     // Mude para true para testar Otimização
-    private static final boolean ATIVAR_PACING = false; 
+    private static final boolean ATIVAR_PACING = true; 
     private static final int TAXA_LIMITE_KBPS = 50; // Limite de 50KB/s se o pacing estiver ativo
     
     // Mude o tamanho do buffer para testar impacto no desempenho (Buffer Tuning)
@@ -128,12 +128,12 @@ public class TCPProxy {
                     long endTime = System.nanoTime();
 
                     // --- CÁLCULO DE MÉTRICAS  ---
-                    double durationSeconds = (endTime - startTime) / 1000000000; // segundos
-                    double durationMs = (endTime - startTime) / 1000000;          // milissegundos
+                    double durationSeconds = (endTime - startTime) / 1_000_000_000.0; // segundos
+                    double durationMs = (endTime - startTime) / 1_000_000.0;          // milissegundos
                     
                     // Throughput = Bits / Segundos -> Mbps
                     double bits = bytesRead * 8;
-                    double throughputMbps = (bits / durationSeconds) / 1000000;
+                    double throughputMbps = (bits / durationSeconds) / 1_000_000.0;
 
                     // Exibe no console
                     System.out.printf("[%s #%d] %d B | %.2f Mbps | %.2f ms%n", 

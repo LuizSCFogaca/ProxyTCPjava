@@ -13,8 +13,7 @@
     Logs: Registro automático das métricas em arquivos CSV para posterior análise gráfica.
 
 # Pré-requisitos
-J   ava JDK instalado (versão 8 ou superior).
-
+        Java JDK instalado (versão 8 ou superior).
         Acesso a um terminal (Linux, Windows ou macOS).
 
 # Instruções de Compilação e Execução
@@ -47,7 +46,7 @@ J   ava JDK instalado (versão 8 ou superior).
 
     Timestamp | ID da Conexão | Direção do Tráfego | Bytes Transferidos | Throughput (Mbps) | Latência (ms) | Status do Pacing
 
-    Gráficos: 
+    Gráficos: https://drive.google.com/drive/folders/1wMJUBoWroxe_bfRKQqN82CXZwx_zjoSn?usp=sharing
 
 # Estrutura dos Arquivos
     TCPServer.java: Implementação do servidor de eco.
