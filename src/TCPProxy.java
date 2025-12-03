@@ -63,7 +63,7 @@ public class TCPProxy {
     private static void otimizarSocket(Socket s) throws SocketException {
         s.setReceiveBufferSize(BUFFER_SIZE);
         s.setSendBufferSize(BUFFER_SIZE);
-        // s.setTcpNoDelay(true); //latência menor
+        
     }
 
     // Inicializa o CSV
