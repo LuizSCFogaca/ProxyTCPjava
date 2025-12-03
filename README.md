@@ -46,7 +46,7 @@
 
     Timestamp | ID da Conexão | Direção do Tráfego | Bytes Transferidos | Throughput (Mbps) | Latência (ms) | Status do Pacing
 
-    Gráficos: https://drive.google.com/drive/folders/1wMJUBoWroxe_bfRKQqN82CXZwx_zjoSn?usp=sharing
+    Gráficos e vídeo rodando a aplicação: https://drive.google.com/drive/folders/1wMJUBoWroxe_bfRKQqN82CXZwx_zjoSn?usp=sharing
 
 # Estrutura dos Arquivos
     TCPServer.java: Implementação do servidor de eco.
